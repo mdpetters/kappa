@@ -1,5 +1,5 @@
 
-%% define common constants and setup the problem                      
+%% define common constants and setup the problem
 R = 8.314;                   % universal gas constant
 T = 298.15;                  % temperature
 sigma0 = 0.072;              % surface tension at standard state [J m-2]
@@ -7,7 +7,7 @@ A = 8.69251e-6;              % A - parameter [K3 m3 J-1]
 e = 0.9;                     % volume fraction of surfactant
 alphaw = (18.0/0.997)*1e-6;  % molar volume of water
 
-%% Initialize the calculation SDS                                          
+%% Initialize the calculation SDS
 alpha = (288.33/1.176)*1e-6; % molar volume of compound A 
 Gmax = 13.9*1e-3/(R*T);      % Szyskowski parameter SDS
 beta = 9.5e-1;               % Szyskowski parameter 
@@ -37,13 +37,13 @@ fprintf('\n')
 
 eps = 0.01:0.001:1;
 for i = 1:numel(eps)
-  sds.e = eps(i);
- [Sc, sigm] = sc_sft(sds, kNaCl, Dd, true);
- sc(i) = (Sc-1)*100;
+    sds.e = eps(i);
+    [Sc, sigm] = sc_sft(sds, kNaCl, Dd, true);
+    sc(i) = (Sc-1)*100;
 end
 
-# Compare to Raatikainen and Laaksonen, Figure 2
-# https://www.geosci-model-dev.net/4/107/2011/gmd-4-107-2011.pdf
+% Compare to Raatikainen and Laaksonen, Figure 2
+% https://www.geosci-model-dev.net/4/107/2011/gmd-4-107-2011.pdf
 plot(eps*100, sc)
 xlabel('Surfactant dry mass fraction (%)')
 ylabel('Critical supersaturation (%)')
