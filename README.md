@@ -5,9 +5,9 @@ Code in various languages to relate the hygroscopicity parameter kappa with hygr
 ## Documentation
 - ```Excel/``` The spreadsheet is self explanatory and includes a number of forward and inverse calculations related to Petters and Kreidenweis (2007,2008).
 - ```txt/``` The text file kappalines.txt can by used to overlay lines of constant kappa onto a critical supersaturation/dry diameter plot.
-- ```IDL``` The IDL (Interactive Data Language) directory includes code to replicate Petters and Kreidenweis (2007,2008, and 2013)
+- ```IDL_GDL``` The IDL (Interactive Data Language) or GDL directory includes code to replicate Petters and Kreidenweis (2007,2008, and 2013)
 - ```Python``` The Python directory includes code to replicate Petters and Kreidenweis (2008)
-- ```MATLAB``` The MATLAB directory includes code to replicate Petters and Kreidenweis (2008)
+- ```MATLAB_OCTAVE``` The MATLAB/Octave directory includes code to replicate Petters and Kreidenweis (2008) and Petters and Kreidenweis (2013)
 
 ## Contribute
 Contributions for code related to kappa conversions written in any language are welcome.
