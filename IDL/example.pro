@@ -30,4 +30,3 @@ print, ''
 print, 'With common counter ion'
 print, 'sc (%)    sigma (J m-2)'
 print, result2.sc, result2.tsig
-end

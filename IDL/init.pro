@@ -18,8 +18,8 @@ pro init
 common initializiation_block, system_variables_are_initialized
 
 if not defined(system_variables_are_initialized) then begin
-    defsysv, '!true', 1
-    defsysv, '!false', 0
+    ;defsysv, '!true', 1
+    ;defsysv, '!false', 0
     defsysv, '!fptr', 1
     defsysv, '!fptr1', 2
     defsysv, '!g', 9.81
